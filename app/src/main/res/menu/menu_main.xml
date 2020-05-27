@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_contacts"
+        android:icon="@drawable/avatar"
+        android:title="Contacts"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_camera"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:title="Camera"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_expense"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Expense" />
+</menu>
