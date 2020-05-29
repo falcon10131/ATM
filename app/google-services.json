@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "940326596590",
+    "firebase_url": "https://myatm-79fed.firebaseio.com",
+    "project_id": "myatm-79fed",
+    "storage_bucket": "myatm-79fed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940326596590:android:4d5f5e4024a207746ba8ff",
+        "android_client_info": {
+          "package_name": "com.example.atm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940326596590-660vfe9g53d55c58m01mivtttrcv8kmc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJPigLpC_SIiKCpWqMwve3QdRKkhuRnBY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940326596590-660vfe9g53d55c58m01mivtttrcv8kmc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

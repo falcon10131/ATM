@@ -27,7 +27,7 @@ class ContactAdapter(private val contacts : MutableList<Contact>): RecyclerView.
         holder.txtPhone.text = contacts[position].phone
     }
 
-    //ContactViewHolder接收到的view會傳給父類別RecyclerView.ViewHolder
+    //ContactViewHolder接收到的view會傳給父類別RecyclerView.ViewHolder  ViewHolder決定畫面要漲什麼
     inner class ContactViewHolder(view: View): RecyclerView.ViewHolder(view){
         val txtName = view.txt_contactName
         val txtPhone = view.txt_Phone

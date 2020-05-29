@@ -12,9 +12,10 @@ import android.widget.Toast
 import androidx.core.view.isGone
 import androidx.core.view.isInvisible
 import com.example.atm.R
+import com.example.atm.services.HelloService
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_main.*
-
+//2020-05-29- 17:38
 class MainActivity : AppCompatActivity() {
     companion object{
         val REQUEST_LOGIN = 100
@@ -29,6 +30,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
         getSharedPreferences("nickshare", Context.MODE_PRIVATE)
             .getString("nickname","")?.run { txt_shownick.text = this }
         getSharedPreferences("gendershare", Context.MODE_PRIVATE)
@@ -39,16 +42,16 @@ class MainActivity : AppCompatActivity() {
 //        getSharedPreferences("setok", Context.MODE_PRIVATE)
 //            .getBoolean("ok",false)?.run { logon = true }
 
-        if(!logon) {
-//            txt_notsee.visibility = View.GONE
-//            txt_hello.visibility = View.VISIBLE
-            val intentToLogin = Intent(this, LoginActivity::class.java)
-            startActivityForResult(intentToLogin,REQUEST_LOGIN)
-        } else {
-//            txt_notsee.visibility = View.VISIBLE
-//            txt_hello.visibility = View.GONE
-            println("12321")
-        }
+//        if(!logon) {
+////            txt_notsee.visibility = View.GONE
+////            txt_hello.visibility = View.VISIBLE
+//            val intentToLogin = Intent(this, LoginActivity::class.java)
+//            startActivityForResult(intentToLogin,REQUEST_LOGIN)
+//        } else {
+////            txt_notsee.visibility = View.VISIBLE
+////            txt_hello.visibility = View.GONE
+//            println("12321")
+//        }
 
         txt_helloworld.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
@@ -68,7 +71,7 @@ class MainActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
-
+/*
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == REQUEST_LOGIN){
@@ -77,8 +80,6 @@ class MainActivity : AppCompatActivity() {
         } else {
             finish()
         }
-
-
 
         if (requestCode == SET_NICKNAME){
             if (resultCode == Activity.RESULT_OK){
@@ -117,4 +118,5 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+    */
 }

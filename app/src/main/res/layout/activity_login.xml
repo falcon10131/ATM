@@ -79,24 +79,24 @@
         app:layout_constraintTop_toBottomOf="@+id/view">
 
         <Button
-            android:id="@+id/bt_Login"
+            android:id="@+id/fmbt_Login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="105dp"
             android:layout_marginEnd="20dp"
             android:text="LOGIN"
-            app:layout_constraintEnd_toStartOf="@+id/bt_register"
+            app:layout_constraintEnd_toStartOf="@+id/fmbt_register"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/bt_register"
+            android:id="@+id/fmbt_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="18dp"
             android:text="REGISTER"
-            app:layout_constraintStart_toEndOf="@+id/bt_Login"
-            app:layout_constraintTop_toTopOf="@+id/bt_Login" />
+            app:layout_constraintStart_toEndOf="@+id/fmbt_Login"
+            app:layout_constraintTop_toTopOf="@+id/fmbt_Login" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
