@@ -78,6 +78,7 @@ class ExpenseActivity : AppCompatActivity() {
             dateText.setText(expense.date)
             infoText.setText(expense.info)
             amountText.setText(expense.amount)
+
        }
        val dateText = view.extxt_date
         val infoText = view.extxt_info

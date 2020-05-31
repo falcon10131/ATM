@@ -15,7 +15,7 @@ import com.example.atm.R
 import com.example.atm.services.HelloService
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_main.*
-//2020-05-29- 17:38
+//2020-05-31- 23:25
 class MainActivity : AppCompatActivity() {
     companion object{
         val REQUEST_LOGIN = 100
