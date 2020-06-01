@@ -78,19 +78,9 @@ class MaterialActivity : AppCompatActivity() {
         msg1.putExtra("extra_MSG","Would U want to hang out?")
         startService(msg1)
 
-
-
 //        fmbt_Login.setOnClickListener {
 //            login()
 //        }
-
-        if (!logon) {
-
-
-
-        } else {
-
-        }
 
 //        if(!logon) {
 //            val intentToLogin = Intent(this, LoginActivity::class.java)
